@@ -83,9 +83,17 @@ Este script irá:
 
 ## Visualizar Resultados
 
-Após executar os testes, você pode visualizar os resultados de duas formas:
+Após executar os testes, você pode visualizar os resultados de três formas:
 
-### 1. Documento Markdown (RESULTADOS.md)
+### 1. Console (extract_metrics.py)
+
+Visualize métricas resumidas direto no terminal:
+
+```bash
+python3 extract_metrics.py
+```
+
+### 2. Documento Markdown (RESULTADOS.md)
 
 Leia o arquivo completo com análise detalhada:
 
@@ -95,15 +103,30 @@ cat RESULTADOS.md
 
 Ou abra o arquivo `RESULTADOS.md` no editor.
 
-### 2. Apresentação HTML Interativa (apresentacao.html)
+### 3. Dashboard Interativo (apresentacao.html) ⭐
 
-Visualize os resultados com gráficos interativos abrindo o arquivo HTML no navegador:
+Visualize os resultados com **dashboard estilo Power BI** com gráficos interativos, filtros e temas:
+
+**Importante:** Para carregar os arquivos JSON dinamicamente, você precisa servir o diretório via HTTP:
 
 ```bash
-"$BROWSER" apresentacao.html
+# No diretório raiz do projeto
+python3 -m http.server 8000
 ```
 
-Ou simplesmente abra o arquivo `apresentacao.html` em qualquer navegador web.
+Em seguida, abra no navegador:
+
+```
+http://localhost:8000/apresentacao.html
+```
+
+**Recursos do Dashboard:**
+- 📊 **KPIs em tempo real**: Total de testes, requisições, taxa de sucesso e latência média
+- 🎯 **Filtros interativos**: Selecione quais testes visualizar (smoke, load, stress, spike, soak)
+- 📈 **Gráficos dinâmicos**: Latência (média e p95), volume de requisições e status geral
+- 🌙 **Tema claro/escuro**: Alterne entre temas e salve sua preferência
+- 📥 **Export CSV**: Baixe os dados filtrados em formato CSV
+- 📱 **Responsivo**: Adapta-se a diferentes tamanhos de tela
 
 ---
 
