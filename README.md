@@ -103,7 +103,7 @@ cat RESULTADOS.md
 
 Ou abra o arquivo `RESULTADOS.md` no editor.
 
-### 3. Dashboard Interativo (apresentacao.html) ⭐
+### 3. Dashboard Interativo (index.html) ⭐
 
 Visualize os resultados com **dashboard estilo Power BI** com gráficos interativos, filtros e temas:
 
@@ -117,8 +117,10 @@ python3 -m http.server 8000
 Em seguida, abra no navegador:
 
 ```
-http://localhost:8000/apresentacao.html
+http://localhost:8000
 ```
+
+O dashboard será carregado automaticamente (arquivo `index.html`).
 
 **Recursos do Dashboard:**
 - 📊 **KPIs em tempo real**: Total de testes, requisições, taxa de sucesso e latência média
@@ -140,6 +142,6 @@ Após executar os testes, os seguintes arquivos são criados:
 - `saida_spike.json` - Métricas do teste spike em formato JSON
 - `saida_soak.json` - Métricas do teste soak em formato JSON
 - `RESULTADOS.md` - Relatório completo em Markdown
-- `apresentacao.html` - Apresentação visual com gráficos
+- `index.html` - Dashboard interativo com gráficos (acesse via `http://localhost:8000`)
 
 # Testes-K6

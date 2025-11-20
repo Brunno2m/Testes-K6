@@ -50,6 +50,17 @@
         body.dark-theme tr:hover td {
             background: #475569;
         }
+        body.dark-theme .footer {
+            background: #1e293b;
+            color: #cbd5e1;
+            border-top-color: #334155;
+        }
+        body.dark-theme .footer h4 {
+            color: #e2e8f0;
+        }
+        body.dark-theme .footer hr {
+            border-top-color: #334155;
+        }
         .container {
             max-width: 1400px;
             margin: 0 auto;
@@ -353,7 +364,32 @@
         </div>
 
         <div class="footer">
-            <p><strong>API Testada:</strong> GET /sum?a=1&b=2 — Painel único com todos os resultados</p>
+            <p style="margin-bottom:12px;"><strong>API Testada:</strong> GET /sum?a=1&b=2 — Painel único com todos os resultados</p>
+            
+            <hr style="border:none; border-top:1px solid #cbd5e1; margin:16px 0;">
+            
+            <h4 style="color:#0f172a; margin-bottom:10px;">📂 Recursos e Arquivos</h4>
+            <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-bottom:12px;">
+                <a href="README.md" target="_blank" style="padding:6px 12px; background:#3b82f6; color:#fff; text-decoration:none; border-radius:4px; font-size:0.9em;">📖 README</a>
+                <a href="RESULTADOS.md" target="_blank" style="padding:6px 12px; background:#8b5cf6; color:#fff; text-decoration:none; border-radius:4px; font-size:0.9em;">📊 Resultados MD</a>
+                <a href="extract_metrics.py" target="_blank" style="padding:6px 12px; background:#f59e0b; color:#fff; text-decoration:none; border-radius:4px; font-size:0.9em;">🐍 extract_metrics.py</a>
+                <a href="run_tests.sh" target="_blank" style="padding:6px 12px; background:#10b981; color:#fff; text-decoration:none; border-radius:4px; font-size:0.9em;">🚀 run_tests.sh</a>
+            </div>
+            
+            <h4 style="color:#0f172a; margin-bottom:10px;">📁 Arquivos JSON de Saída</h4>
+            <div style="display:flex; gap:8px; flex-wrap:wrap; justify-content:center; margin-bottom:12px;">
+                <a href="saida_smoke.json" target="_blank" style="padding:4px 10px; background:#64748b; color:#fff; text-decoration:none; border-radius:4px; font-size:0.85em;">smoke</a>
+                <a href="saida_load.json" target="_blank" style="padding:4px 10px; background:#64748b; color:#fff; text-decoration:none; border-radius:4px; font-size:0.85em;">load</a>
+                <a href="saida_stress.json" target="_blank" style="padding:4px 10px; background:#64748b; color:#fff; text-decoration:none; border-radius:4px; font-size:0.85em;">stress</a>
+                <a href="saida_spike.json" target="_blank" style="padding:4px 10px; background:#64748b; color:#fff; text-decoration:none; border-radius:4px; font-size:0.85em;">spike</a>
+                <a href="saida_soak.json" target="_blank" style="padding:4px 10px; background:#64748b; color:#fff; text-decoration:none; border-radius:4px; font-size:0.85em;">soak</a>
+            </div>
+            
+            <h4 style="color:#0f172a; margin-bottom:10px;">🗂️ Pastas do Projeto</h4>
+            <div style="display:flex; gap:8px; flex-wrap:wrap; justify-content:center;">
+                <a href="api/" target="_blank" style="padding:4px 10px; background:#475569; color:#fff; text-decoration:none; border-radius:4px; font-size:0.85em;">📂 api/</a>
+                <a href="k6/" target="_blank" style="padding:4px 10px; background:#475569; color:#fff; text-decoration:none; border-radius:4px; font-size:0.85em;">📂 k6/</a>
+            </div>
         </div>
     </div>
 
